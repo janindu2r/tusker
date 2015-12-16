@@ -1,14 +1,14 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2015-12-14T12:44:27
+# Project created by QtCreator 2015-12-17T01:34:41
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Tusker
+TARGET = TuskerApp
 TEMPLATE = app
 
 
