@@ -14,10 +14,13 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         widget.cpp \
-    newtask.cpp
+    newtask.cpp \
+    task.cpp
 
 HEADERS  += widget.h \
-    newtask.h
+    newtask.h \
+    task.h
 
 FORMS    += widget.ui \
-    newtask.ui
+    newtask.ui \
+    task.ui

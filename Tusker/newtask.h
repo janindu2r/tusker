@@ -15,6 +15,9 @@ public:
     explicit NewTask(QWidget *parent = 0);
     ~NewTask();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::NewTask *ui;
 };
