@@ -14,6 +14,9 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -21,12 +24,38 @@ QT_BEGIN_NAMESPACE
 class Ui_NewTask
 {
 public:
+    QVBoxLayout *verticalLayout;
+    QLineEdit *lineEdit;
+    QLineEdit *lineEdit_2;
+    QPushButton *saveNewBtn;
 
     void setupUi(QWidget *NewTask)
     {
         if (NewTask->objectName().isEmpty())
             NewTask->setObjectName(QStringLiteral("NewTask"));
-        NewTask->resize(400, 300);
+        NewTask->resize(400, 169);
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(NewTask->sizePolicy().hasHeightForWidth());
+        NewTask->setSizePolicy(sizePolicy);
+        verticalLayout = new QVBoxLayout(NewTask);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        lineEdit = new QLineEdit(NewTask);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+
+        verticalLayout->addWidget(lineEdit);
+
+        lineEdit_2 = new QLineEdit(NewTask);
+        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+
+        verticalLayout->addWidget(lineEdit_2);
+
+        saveNewBtn = new QPushButton(NewTask);
+        saveNewBtn->setObjectName(QStringLiteral("saveNewBtn"));
+
+        verticalLayout->addWidget(saveNewBtn);
+
 
         retranslateUi(NewTask);
 
@@ -36,6 +65,7 @@ public:
     void retranslateUi(QWidget *NewTask)
     {
         NewTask->setWindowTitle(QApplication::translate("NewTask", "Form", 0));
+        saveNewBtn->setText(QApplication::translate("NewTask", "Save", 0));
     } // retranslateUi
 
 };

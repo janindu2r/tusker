@@ -1,0 +1,27 @@
+<Dorms>
+ <Dorm Name="Dorm Building 0" ID="0">
+  <Room Name="Room 0" ID="0"/>
+  <Room Name="Room 1" ID="1"/>
+  <Room Name="Room 2" ID="2"/>
+ </Dorm>
+ <Dorm Name="Dorm Building 1" ID="1">
+  <Room Name="Room 0" ID="0"/>
+  <Room Name="Room 1" ID="1"/>
+  <Room Name="Room 2" ID="2"/>
+ </Dorm>
+ <Dorm Name="Dorm Building 2" ID="2">
+  <Room Name="Room 0" ID="0"/>
+  <Room Name="Room 1" ID="1"/>
+  <Room Name="Room 2" ID="2"/>
+ </Dorm>
+ <Dorm Name="Dorm Building 3" ID="3">
+  <Room Name="Room 0" ID="0"/>
+  <Room Name="Room 1" ID="1"/>
+  <Room Name="Room 2" ID="2"/>
+ </Dorm>
+ <Dorm Name="Dorm Building 4" ID="4">
+  <Room Name="Room 0" ID="0"/>
+  <Room Name="Room 1" ID="1"/>
+  <Room Name="Room 2" ID="2"/>
+ </Dorm>
+</Dorms>

@@ -1,5 +1,9 @@
 #include "newtask.h"
 #include "ui_newtask.h"
+#include "widget.h"
+#include <QtXML>
+#include <QDebug>
+
 
 NewTask::NewTask(QWidget *parent) :
     QWidget(parent),
@@ -13,10 +17,14 @@ NewTask::~NewTask()
     delete ui;
 }
 
-void NewTask::on_saveBtn_clicked()
+void NewTask::on_saveNewBtn_clicked()
 {
-    QString getTitle= ui->title->text();
-    QString getDesc = ui->description->text();
+    createFile();
 
+    childElement();
+
+    writeToFile();
 
 }
+
+
